@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 const PREVIEW_SECRET = process.env.PREVIEW_SECRET || "devnextra-preview-2026";
 const PREVIEW_COOKIE = "devnextra_preview";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
 
   const isExempt =

@@ -54,6 +54,36 @@ h1, h2, h3, h4, h5, h6 {
   animation-delay: 0.5s;
 }
 
+
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blob-move {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes logo-pop {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+.animate-blob {
+  animation: blob-move 8s ease-in-out infinite;
+}
+
+.animate-logo-pop {
+  animation: logo-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -61,5 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
+  }
+  .animate-fade-in-up,
+  .animate-blob,
+  .animate-logo-pop,
+  .animate-float-slow {
+    animation: none !important;
   }
 }

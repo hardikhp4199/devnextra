@@ -49,14 +49,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Right: Why Choose DevNextra Image */}
-        <div className="relative flex h-64 items-center justify-center sm:h-80">
-          {/* <Image
-            src="/why-choose-devnextra.png"
-            alt="DevNextra technology and secure digital solutions"
-            width={800}
-            height={600}
-            className="h-auto w-full max-w-xl object-contain"
-          /> */}
+        <div className="relative mt-5 flex items-center justify-center lg:mt-0">
           <WhyChooseGraphic />
         </div>
 
