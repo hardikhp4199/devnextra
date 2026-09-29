@@ -3,7 +3,7 @@
 > **AI, Cloud & Product Engineering Partner**  
 > Building secure, scalable and intelligent digital products for startups, growing businesses and enterprises.
 
-![DevNextra homepage concept](./A_Global_SaaS.png)
+
 
 ## Overview
 
