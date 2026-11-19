@@ -1,8 +1,8 @@
-// import { MetadataRoute } from "next";
+// // import { MetadataRoute } from "next";
 
-export default function robots() {
-  return { rules: { userAgent: "*", disallow: "/" } };
-}
+// export default function robots() {
+//   return { rules: { userAgent: "*", disallow: "/" } };
+// }
 
 // export default function robots(): MetadataRoute.Robots {
 //   return {
@@ -13,3 +13,15 @@ export default function robots() {
 //     sitemap: "https://devnextra.com/sitemap.xml", // update once your real domain is live
 //   };
 // }
+
+import { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: "https://www.devnextra.com/sitemap.xml",
+  };
+}
